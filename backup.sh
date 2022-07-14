@@ -1,3 +1,2 @@
-. utils/creds-backup.sh
-. utils/vscode-backup.sh
-. utils/dotfiles-migrate.sh
+. backup/creds-backup.sh
+. backup/dotfiles-migrate.sh
