@@ -14,6 +14,6 @@ else
     echo "Creating an encrypted 7zip file - set a strong password!"
 fi
 
-7z a -p -mhe=on "$BACKUP_FILE" ~/notes.txt ~/Library/Keychains/login.keychain-db ~/.ssh \
+7z a -p -mhe=on "$BACKUP_FILE" ~/Library/Keychains/login.keychain-db ~/.ssh \
  && echo "Backed up to $BACKUP_FILE, please review and commit to Git" \
  || echo "!!! Backup failed!"
