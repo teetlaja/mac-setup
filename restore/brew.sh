@@ -1,7 +1,7 @@
 
 if [ ! $(which brew) ]; then
     echo "Installing Homebrew package manager - https://brew.sh/"
-    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)";
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)";
 else
     echo "Upgrading brew dependencies"
     brew update
@@ -24,13 +24,12 @@ INSTALLED_CASK=$(brew cask list)
 function brew_cask_if_not_installed () {
     package=$1
     if [[ ! $INSTALLED_CASK = *"$package"* ]]; then
-        brew cask install $package
+        brew install --cask $package
     fi
 }
 
-
 brew_if_not_installed git
-brew_if_not_installed node
+brew_if_not_installed nvm
 brew_if_not_installed yarn
 brew_if_not_installed jq
 brew_if_not_installed p7zip
@@ -45,12 +44,43 @@ brew_if_not_installed spotify
 brew_if_not_installed spotify-tui
 brew_if_not_installed iterm2
 
+# Browsers
 brew_cask_if_not_installed visual-studio-code
 brew_cask_if_not_installed google-chrome
 brew_cask_if_not_installed firefox
+
+# Storage
+brew_cask_if_not_installed google-drive
+brew_cask_if_not_installed onedrive
+
+# Communication
+brew_cask_if_not_installed zoom
 brew_cask_if_not_installed slack
+brew_cask_if_not_installed tandem
+brew_cask_if_not_installed discord
+
+# Tooling
+brew_cask_if_not_installed clickup
+brew_cask_if_not_installed overflow
+brew_cask_if_not_installed cheatsheet
+brew_cask_if_not_installed webtorrent
 brew_cask_if_not_installed microsoft-office
+brew_cask_if_not_installed balsamiq-wireframes
+brew_cask_if_not_installed keeper-password-manager
+
+# Dev tooling
+brew_cask_if_not_installed docker
 brew_cask_if_not_installed postman
-brew_cask_if_not_installed sequel-pro
-brew_cask_if_not_installed mysqlworkbench
+brew_cask_if_not_installed microsoft-remote-desktop
+
+# DB tooling
+brew_cask_if_not_installed medis
+brew_cask_if_not_installed postico
 brew_cask_if_not_installed pgadmin4
+brew_cask_if_not_installed sequel-pro
+brew_cask_if_not_installed mongodb-compass
+
+# Music
+brew_cask_if_not_installed vlc
+brew_cask_if_not_installed reaper
+brew_cask_if_not_installed spotify

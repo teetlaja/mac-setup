@@ -18,28 +18,30 @@ defaults write com.apple.ActivityMonitor IconType -int 5
 
 echo "Dock: Clearing default apps"
 dockutil --no-restart --remove Siri
+dockutil --no-restart --remove Safari
 dockutil --no-restart --remove Mail
 dockutil --no-restart --remove Contacts
-dockutil --no-restart --remove Calendar
-dockutil --no-restart --remove Notes
 dockutil --no-restart --remove Reminders
 dockutil --no-restart --remove Maps
 dockutil --no-restart --remove Photos
 dockutil --no-restart --remove Messages
+dockutil --no-restart --remove TV
 dockutil --no-restart --remove Numbers
 dockutil --no-restart --remove FaceTime
 dockutil --no-restart --remove Pages
 dockutil --no-restart --remove Keynote
 dockutil --no-restart --remove iTunes
+dockutil --no-restart --remove iMovie
 dockutil --no-restart --remove iBooks
 dockutil --no-restart --remove "App Store"
 
 echo "Dock: Adding useful apps"
 dockutil --no-restart --add "/Applications/Google Chrome.app"
 dockutil --no-restart --add "/Applications/Slack.app"
+dockutil --no-restart --add "/Applications/Tandem.app"
+dockutil --no-restart --add "/Applications/iTerm.app"
 dockutil --no-restart --add "/Applications/Visual Studio Code.app"
-dockutil --no-restart --add "/Applications/Utilities/Terminal.app"
 dockutil --no-restart --add "/Applications/Utilities/Spotify.app"
-dockutil --no-restart --add "/Applications/Utilities/Activity Monitor.app"
+dockutil --no-restart --add "/Applications/Calculator.app"
 
 killall Dock

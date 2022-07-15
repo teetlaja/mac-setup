@@ -1,17 +1,20 @@
+# Install brew and all applications
+. restore/brew.sh
 
-. utils/brew.sh
-
+# On the first run
 if [ ! -f .firstrundone ]; then
-    . utils/git-firstrun.sh
-    . utils/dock-firstrun.sh
-    . utils/apps-firstrun.sh
+    # Clear the Dock
+    . restore/firstrun/dock-firstrun.sh
+    # Launch some apps
+    . restore/firstrun/apps-firstrun.sh
+    # Generate ssh key
+    . restore/firstrun/git-firstrun.sh
+    # Install global yarn packages
+    . restore/firstrun/yarn.sh
+    # Add powerline fonts
+    . restore/firstrun/powerline-fonts.sh
     touch .firstrundone
 fi
 
-. utils/git-dotfiles.sh
-. utils/dotfiles-migrate.sh
-
-. utils/vscode-restore.sh
-. utils/vscode-backup.sh
-
-. utils/font-fira-code.sh
+# Setup Dotfiles
+. backup/dotfiles-migrate.sh
