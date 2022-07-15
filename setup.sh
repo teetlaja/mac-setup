@@ -18,3 +18,7 @@ fi
 
 # Setup Dotfiles
 . backup/dotfiles-migrate.sh
+
+# Setup VS Code Extensions
+. restore/vscode-restore.sh
+. backup/vscode-backup.sh

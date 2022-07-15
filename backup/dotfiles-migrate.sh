@@ -34,3 +34,4 @@ migrate_simple gitconfig
 migrate ~/.ssh/config ~/dotfiles/ssh-config
 migrate ~/.aws/credentials ~/dotfiles/aws-config
 migrate ~/.ssh/known_hosts ~/dotfiles/ssh-known_hosts
+migrate ~/"Library/Application Support/Code/User/settings.json" ~/dotfiles/vscode-settings.json
