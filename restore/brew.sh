@@ -44,6 +44,10 @@ brew_if_not_installed spotify
 brew_if_not_installed spotify-tui
 brew_if_not_installed iterm2
 
+#########################
+# Apps to install on mac
+#########################
+
 # Browsers
 brew_cask_if_not_installed visual-studio-code
 brew_cask_if_not_installed google-chrome
