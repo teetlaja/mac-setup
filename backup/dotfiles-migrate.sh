@@ -30,6 +30,7 @@ migrate_simple () {
 
 # List of dotfile to migrate
 migrate_simple zshrc
+migrate_simple zprofile
 migrate_simple gitconfig
 migrate ~/.ssh/config ~/dotfiles/ssh-config
 migrate ~/.aws/credentials ~/dotfiles/aws-config
