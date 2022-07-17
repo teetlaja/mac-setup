@@ -1,6 +1,6 @@
 
 if [ ! $(which brew) ]; then
-    echo "Installing Homebrew package manager - https://brew.sh/"
+    echo "Installing Homebrew package manager - https://brew.sh/ "
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)";
 else
     echo "Upgrading brew dependencies"
@@ -19,7 +19,7 @@ function brew_if_not_installed () {
     fi
 }
 
-INSTALLED_CASK=$(brew cask list)
+INSTALLED_CASK=$(brew list --cask)
 
 function brew_cask_if_not_installed () {
     package=$1
@@ -28,63 +28,70 @@ function brew_cask_if_not_installed () {
     fi
 }
 
-brew_if_not_installed git
-brew_if_not_installed nvm
-brew_if_not_installed yarn
+#########################
+# Brew formulaes
+#########################
+
 brew_if_not_installed jq
+brew_if_not_installed nvm
+brew_if_not_installed git
+brew_if_not_installed yarn
 brew_if_not_installed p7zip
-brew_if_not_installed the_silver_searcher
-brew_if_not_installed postgresql
-brew_if_not_installed mongodb-community
-brew_if_not_installed mongoose
 brew_if_not_installed redis
-brew_if_not_installed ruby-build
-brew_if_not_installed speedtest
-brew_if_not_installed spotify
-brew_if_not_installed spotify-tui
 brew_if_not_installed iterm2
+brew_if_not_installed dockutil
+brew_if_not_installed mongoose
+brew_if_not_installed postgresql
+brew_if_not_installed ruby-build
+brew_if_not_installed spotify-tui
+brew_if_not_installed speedtest-cli
+brew_if_not_installed the_silver_searcher
+
+brew tap mongodb/brew
+# brew update
+brew_if_not_installed mongodb-community
 
 #########################
 # Apps to install on mac
 #########################
 
 # Browsers
-brew_cask_if_not_installed visual-studio-code
 brew_cask_if_not_installed google-chrome
-brew_cask_if_not_installed firefox
+# brew_cask_if_not_installed firefox
 
 # Storage
+# brew_cask_if_not_installed onedrive
 brew_cask_if_not_installed google-drive
-brew_cask_if_not_installed onedrive
 
 # Communication
 brew_cask_if_not_installed zoom
 brew_cask_if_not_installed slack
 brew_cask_if_not_installed tandem
-brew_cask_if_not_installed discord
+# brew_cask_if_not_installed discord
 
 # Tooling
 brew_cask_if_not_installed clickup
-brew_cask_if_not_installed overflow
+# brew_cask_if_not_installed overflow
 brew_cask_if_not_installed cheatsheet
 brew_cask_if_not_installed webtorrent
-brew_cask_if_not_installed microsoft-office
+# brew_cask_if_not_installed microsoft-office
 brew_cask_if_not_installed balsamiq-wireframes
 brew_cask_if_not_installed keeper-password-manager
 
 # Dev tooling
 brew_cask_if_not_installed docker
 brew_cask_if_not_installed postman
-brew_cask_if_not_installed microsoft-remote-desktop
+brew_cask_if_not_installed visual-studio-code
+# brew_cask_if_not_installed microsoft-remote-desktop
 
 # DB tooling
-brew_cask_if_not_installed medis
-brew_cask_if_not_installed postico
-brew_cask_if_not_installed pgadmin4
-brew_cask_if_not_installed sequel-pro
+# brew_cask_if_not_installed medis
+# brew_cask_if_not_installed postico
+# brew_cask_if_not_installed pgadmin4
+# brew_cask_if_not_installed sequel-pro
 brew_cask_if_not_installed mongodb-compass
 
 # Music
 brew_cask_if_not_installed vlc
-brew_cask_if_not_installed reaper
+# brew_cask_if_not_installed reaper
 brew_cask_if_not_installed spotify

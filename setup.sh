@@ -1,3 +1,5 @@
+#!/bin/zsh
+
 # Install brew and all applications
 . restore/brew.sh
 
@@ -9,6 +11,8 @@ if [ ! -f .firstrundone ]; then
     . restore/firstrun/apps-firstrun.sh
     # Generate ssh key
     . restore/firstrun/git-firstrun.sh
+    # Upgrade terminal to poweruser level
+    . restore/firstrun/oh-my-zsh.sh
     # Install global yarn packages
     . restore/firstrun/yarn.sh
     # Add powerline fonts

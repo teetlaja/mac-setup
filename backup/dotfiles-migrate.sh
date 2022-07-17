@@ -9,17 +9,22 @@ function migrate () {
 
     if [[ -f "$1" && ! -L "$1" ]]; then
         if [ -f "$2" ]; then
+            echo "Moving $1 to backup"
             mv "$1" "$1".$(date +%s).backup;
         else
+            echo "Moving $1 to dotfiles"
             mv "$1" "$2"
         fi
     fi
 
     if [ ! -f "$2" ]; then
+        echo "Creating $2"
         touch "$2"
     fi
 
     if [ ! -L "$1" ]; then
+        echo "Linking $1 -> $2"
+        mkdir -p $(dirname $1)
         ln -s "$2" "$1"
     fi
 }
@@ -28,6 +33,7 @@ migrate_simple () {
     migrate ~/."$1" ~/dotfiles/"$1"
 }
 
+echo "Migrating dotfiles"
 # List of dotfile to migrate
 migrate_simple zshrc
 migrate_simple zprofile

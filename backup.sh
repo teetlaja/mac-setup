@@ -1,3 +1,5 @@
+#!/bin/zsh
+
 # Backup Keychain Credentials
 . backup/creds-backup.sh
 
