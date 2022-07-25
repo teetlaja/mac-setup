@@ -5,7 +5,7 @@ Create some private repo called `dotfiles` and clone it to your home folder.
 This will be used to store conf files.
 
 ## To run the setup
-1) [Comment out list of apps you don't want installed](restore/brew.sh)
+1) [Uncomment list of apps you want installed](restore/brew.sh)
 2) Check that setup.sh has execution rights `chmod +x setup.sh`
 3) run `./setup.sh`
 

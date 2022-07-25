@@ -38,7 +38,6 @@ brew_if_not_installed git
 brew_if_not_installed yarn
 brew_if_not_installed p7zip
 brew_if_not_installed redis
-brew_if_not_installed iterm2
 brew_if_not_installed dockutil
 brew_if_not_installed mongoose
 brew_if_not_installed postgresql
@@ -48,50 +47,50 @@ brew_if_not_installed speedtest-cli
 brew_if_not_installed the_silver_searcher
 
 brew tap mongodb/brew
-# brew update
 brew_if_not_installed mongodb-community
 
 #########################
 # Apps to install on mac
 #########################
 
-# Browsers
-brew_cask_if_not_installed google-chrome
+##### Browsers
+# brew_cask_if_not_installed google-chrome
 # brew_cask_if_not_installed firefox
 
-# Storage
+##### Storage
 # brew_cask_if_not_installed onedrive
-brew_cask_if_not_installed google-drive
+# brew_cask_if_not_installed google-drive
 
-# Communication
-brew_cask_if_not_installed zoom
-brew_cask_if_not_installed slack
-brew_cask_if_not_installed tandem
+##### Communication
+# brew_cask_if_not_installed zoom
+# brew_cask_if_not_installed slack
+# brew_cask_if_not_installed tandem
 # brew_cask_if_not_installed discord
 
-# Tooling
-brew_cask_if_not_installed clickup
+##### Tooling
+# brew_cask_if_not_installed clickup
 # brew_cask_if_not_installed overflow
-brew_cask_if_not_installed cheatsheet
-brew_cask_if_not_installed webtorrent
+# brew_cask_if_not_installed cheatsheet
+# brew_cask_if_not_installed webtorrent
 # brew_cask_if_not_installed microsoft-office
-brew_cask_if_not_installed balsamiq-wireframes
-brew_cask_if_not_installed keeper-password-manager
+# brew_cask_if_not_installed balsamiq-wireframes
+# brew_cask_if_not_installed keeper-password-manager
 
-# Dev tooling
-brew_cask_if_not_installed docker
-brew_cask_if_not_installed postman
-brew_cask_if_not_installed visual-studio-code
+##### Dev tooling
+# brew_cask_if_not_installed iterm2
+# brew_cask_if_not_installed docker
+# brew_cask_if_not_installed postman
+# brew_cask_if_not_installed visual-studio-code
 # brew_cask_if_not_installed microsoft-remote-desktop
 
-# DB tooling
+##### DB tooling
 # brew_cask_if_not_installed medis
 # brew_cask_if_not_installed postico
 # brew_cask_if_not_installed pgadmin4
 # brew_cask_if_not_installed sequel-pro
-brew_cask_if_not_installed mongodb-compass
+# brew_cask_if_not_installed mongodb-compass
 
-# Music
-brew_cask_if_not_installed vlc
+##### Music
+# brew_cask_if_not_installed vlc
 # brew_cask_if_not_installed reaper
-brew_cask_if_not_installed spotify
+# brew_cask_if_not_installed spotify
