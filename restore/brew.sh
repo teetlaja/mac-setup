@@ -72,6 +72,7 @@ brew_if_not_installed mongodb-community
 # brew_cask_if_not_installed overflow
 # brew_cask_if_not_installed cheatsheet
 # brew_cask_if_not_installed webtorrent
+# brew_cask_if_not_installed toggl-track
 # brew_cask_if_not_installed microsoft-office
 # brew_cask_if_not_installed balsamiq-wireframes
 # brew_cask_if_not_installed keeper-password-manager
