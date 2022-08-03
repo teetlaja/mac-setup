@@ -38,6 +38,7 @@ brew_if_not_installed git
 brew_if_not_installed yarn
 brew_if_not_installed p7zip
 brew_if_not_installed redis
+brew_if_not_installed minio
 brew_if_not_installed dockutil
 brew_if_not_installed mongoose
 brew_if_not_installed postgresql
