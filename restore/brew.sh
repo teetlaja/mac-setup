@@ -55,21 +55,21 @@ brew_if_not_installed mongodb-community
 #########################
 
 ##### Browsers
-# brew_cask_if_not_installed google-chrome
+brew_cask_if_not_installed google-chrome
 # brew_cask_if_not_installed firefox
 
 ##### Storage
 # brew_cask_if_not_installed onedrive
-# brew_cask_if_not_installed google-drive
+brew_cask_if_not_installed google-drive
 
 ##### Communication
 # brew_cask_if_not_installed zoom
-# brew_cask_if_not_installed slack
-# brew_cask_if_not_installed tandem
+brew_cask_if_not_installed slack
+brew_cask_if_not_installed tandem
 # brew_cask_if_not_installed discord
 
 ##### Tooling
-# brew_cask_if_not_installed clickup
+brew_cask_if_not_installed clickup
 # brew_cask_if_not_installed overflow
 # brew_cask_if_not_installed cheatsheet
 # brew_cask_if_not_installed webtorrent
@@ -79,10 +79,10 @@ brew_if_not_installed mongodb-community
 # brew_cask_if_not_installed keeper-password-manager
 
 ##### Dev tooling
-# brew_cask_if_not_installed iterm2
-# brew_cask_if_not_installed docker
-# brew_cask_if_not_installed postman
-# brew_cask_if_not_installed visual-studio-code
+brew_cask_if_not_installed warp
+brew_cask_if_not_installed docker
+brew_cask_if_not_installed postman
+brew_cask_if_not_installed visual-studio-code
 # brew_cask_if_not_installed microsoft-remote-desktop
 
 ##### DB tooling
@@ -95,4 +95,8 @@ brew_if_not_installed mongodb-community
 ##### Music
 # brew_cask_if_not_installed vlc
 # brew_cask_if_not_installed reaper
-# brew_cask_if_not_installed spotify
+brew_cask_if_not_installed spotify
+
+##### Design
+brew install --cask miro
+brew install --cask figma
