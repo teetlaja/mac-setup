@@ -32,23 +32,23 @@ function brew_cask_if_not_installed () {
 # Brew formulaes
 #########################
 
-brew_if_not_installed jq
+# brew_if_not_installed jq
 brew_if_not_installed nvm
 brew_if_not_installed git
 brew_if_not_installed yarn
-brew_if_not_installed p7zip
+# brew_if_not_installed p7zip
 brew_if_not_installed redis
-brew_if_not_installed minio
-brew_if_not_installed dockutil
-brew_if_not_installed mongoose
+# brew_if_not_installed minio
+# brew_if_not_installed dockutil
+# brew_if_not_installed mongoose
 brew_if_not_installed postgresql
-brew_if_not_installed ruby-build
-brew_if_not_installed spotify-tui
-brew_if_not_installed speedtest-cli
-brew_if_not_installed the_silver_searcher
+# brew_if_not_installed ruby-build
+# brew_if_not_installed spotify-tui
+# brew_if_not_installed speedtest-cli
+# brew_if_not_installed the_silver_searcher
 
-brew tap mongodb/brew
-brew_if_not_installed mongodb-community
+# brew tap mongodb/brew
+# brew_if_not_installed mongodb-community
 
 #########################
 # Apps to install on mac
@@ -56,7 +56,7 @@ brew_if_not_installed mongodb-community
 
 ##### Browsers
 brew_cask_if_not_installed google-chrome
-# brew_cask_if_not_installed firefox
+brew_cask_if_not_installed firefox
 
 ##### Storage
 # brew_cask_if_not_installed onedrive
@@ -65,16 +65,19 @@ brew_cask_if_not_installed google-drive
 ##### Communication
 # brew_cask_if_not_installed zoom
 brew_cask_if_not_installed slack
-brew_cask_if_not_installed tandem
-# brew_cask_if_not_installed discord
+# brew_cask_if_not_installed tandem
+brew_cask_if_not_installed discord
+brew_cask_if_not_installed whatsapp
+brew_cask_if_not_installed messenger
+
 
 ##### Tooling
-brew_cask_if_not_installed clickup
+# brew_cask_if_not_installed clickup
 # brew_cask_if_not_installed overflow
 # brew_cask_if_not_installed cheatsheet
 # brew_cask_if_not_installed webtorrent
-# brew_cask_if_not_installed toggl-track
-# brew_cask_if_not_installed microsoft-office
+brew_cask_if_not_installed toggl-track
+brew_cask_if_not_installed microsoft-office
 # brew_cask_if_not_installed balsamiq-wireframes
 # brew_cask_if_not_installed keeper-password-manager
 
@@ -89,13 +92,17 @@ brew_cask_if_not_installed visual-studio-code
 # brew_cask_if_not_installed medis
 # brew_cask_if_not_installed postico
 # brew_cask_if_not_installed pgadmin4
-# brew_cask_if_not_installed sequel-pro
+brew_cask_if_not_installed sequel-pro
 # brew_cask_if_not_installed mongodb-compass
+brew_cask_if_not_installed mysqlworkbench
 
 ##### Music
 # brew_cask_if_not_installed vlc
 # brew_cask_if_not_installed reaper
 brew_cask_if_not_installed spotify
+
+###### Management
+brew_cask_if_not_installed notion
 
 ##### Design
 brew install --cask miro
