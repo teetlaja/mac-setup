@@ -36,12 +36,13 @@ function brew_cask_if_not_installed () {
 brew_if_not_installed nvm
 brew_if_not_installed git
 brew_if_not_installed yarn
+brew_if_not_installed pnpm
 # brew_if_not_installed p7zip
 brew_if_not_installed redis
 # brew_if_not_installed minio
 # brew_if_not_installed dockutil
 # brew_if_not_installed mongoose
-brew_if_not_installed postgresql
+# brew_if_not_installed postgresql
 # brew_if_not_installed ruby-build
 # brew_if_not_installed spotify-tui
 # brew_if_not_installed speedtest-cli
@@ -56,11 +57,12 @@ brew_if_not_installed postgresql
 
 ##### Browsers
 brew_cask_if_not_installed google-chrome
-brew_cask_if_not_installed firefox
+brew_cask_if_not_installed firefox@developer-edition
+brew_cask_if_not_installed chatgpt-atlas
 
 ##### Storage
 # brew_cask_if_not_installed onedrive
-brew_cask_if_not_installed google-drive
+# brew_cask_if_not_installed google-drive
 
 ##### Communication
 # brew_cask_if_not_installed zoom
@@ -69,6 +71,7 @@ brew_cask_if_not_installed slack
 brew_cask_if_not_installed discord
 brew_cask_if_not_installed whatsapp
 brew_cask_if_not_installed messenger
+brew_cask_if_not_installed microsoft-teams
 
 
 ##### Tooling
@@ -76,25 +79,35 @@ brew_cask_if_not_installed messenger
 # brew_cask_if_not_installed overflow
 # brew_cask_if_not_installed cheatsheet
 # brew_cask_if_not_installed webtorrent
-brew_cask_if_not_installed toggl-track
+# brew_cask_if_not_installed toggl-track
 brew_cask_if_not_installed microsoft-office
+brew_cask_if_not_installed motion
 # brew_cask_if_not_installed balsamiq-wireframes
 # brew_cask_if_not_installed keeper-password-manager
+
+####### AI
+brew_cask_if_not_installed chatgpt
+brew_cask_if_not_installed claude
+brew_cask_if_not_installed claude-code
 
 ##### Dev tooling
 brew_cask_if_not_installed warp
 brew_cask_if_not_installed docker
 brew_cask_if_not_installed postman
-brew_cask_if_not_installed visual-studio-code
+# brew_cask_if_not_installed visual-studio-code
 # brew_cask_if_not_installed microsoft-remote-desktop
+brew_cask_if_not_installed phpstorm
+brew_cask_if_not_installed webstorm
+brew_cask_if_not_installed pycharm
+brew_cask_if_not_installed datagrip
 
 ##### DB tooling
 # brew_cask_if_not_installed medis
 # brew_cask_if_not_installed postico
 # brew_cask_if_not_installed pgadmin4
-brew_cask_if_not_installed sequel-pro
+# brew_cask_if_not_installed sequel-pro
 # brew_cask_if_not_installed mongodb-compass
-brew_cask_if_not_installed mysqlworkbench
+# brew_cask_if_not_installed mysqlworkbench
 
 ##### Music
 # brew_cask_if_not_installed vlc
@@ -105,5 +118,14 @@ brew_cask_if_not_installed spotify
 brew_cask_if_not_installed notion
 
 ##### Design
-brew install --cask miro
+# brew install --cask miro
 brew install --cask figma
+
+##### Trading
+brew_cask_if_not_installed trading-view
+brew_cask_if_not_installed binance
+
+
+##### Gaming
+brew_cask_if_not_installed steam
+brew_cask_if_not_installed google-earth-pro
